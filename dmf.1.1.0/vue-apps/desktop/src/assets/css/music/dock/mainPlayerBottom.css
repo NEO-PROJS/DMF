@@ -1,0 +1,24 @@
+#main-player-bottom { 
+    background-color: transparent;
+    width: 50%;
+    height: 100%;
+    margin: 0 0 0 1vw;
+    display: flex;
+    align-items: center;
+    justify-content :baseline;
+}
+
+#main-player-bottom #cover {
+    background-color: transparent;
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 2%;
+    margin: 0 0 0 0.25vw;
+}
+
+#main-player-bottom #cover img {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}

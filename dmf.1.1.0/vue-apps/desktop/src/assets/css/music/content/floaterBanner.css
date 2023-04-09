@@ -1,0 +1,171 @@
+.floater-banner {
+    background-color: transparent;
+    width: 100%;
+    aspect-ratio: 3;
+    margin: 0 0 1vh 0;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.floater-banner .title {
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+    min-height: 15%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 0;
+    position: relative;
+}
+.floater-banner .title p {
+    display: block;
+    margin: 0 1.5vw 0 0;
+    font-family: 'Cairo';
+    font-size: calc(5pt + 1vw);
+    color: var(--bgColor6);
+}
+.floater-banner .title .more-router {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 1.5vw;
+    top:1.3vw;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1px;
+}
+.floater-banner .title .more-router .more-text {
+    font-family: 'NotoSansArabic';
+    font-size: calc(5pt + 0.8vw);
+    color: var(--bgColor6);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.floater-banner .content {
+    background-color: transparent;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.floater-banner .content .floater-ul {
+    background-color: transparent;
+    width: 100%;
+    height: 85%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.floater-banner .content .floater-trans-leave-active ,
+.floater-banner .content .floater-trans-enter-active {
+    transition: all 0.2s ease-in-out;
+}
+.floater-banner .content .floater-trans-enter-from {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.floater-banner .content .floater-trans-enter-to {
+    transform: translateX(0%);
+    opacity: 1;
+}
+.floater-banner .content .floater-trans-leave-from {
+    transform: translateX(0%);
+    opacity: 1;
+}
+.floater-banner .content .floater-trans-leave-to {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.floater-banner .content .floater-ul li {
+    background-color: #16343f;
+    width: 18%;
+    aspect-ratio: 0.8;
+    margin: 0.8%;
+    flex-shrink: 0;
+    border-radius: 1%;
+    position: relative;
+    cursor: pointer;
+}
+.floater-banner .content .floater-ul li .cover {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: end;
+}
+.floater-banner .content .floater-ul li .cover-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+.floater-banner .content .floater-ul li .cover-svg {
+    width: 100%;
+    height: fit-content;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.floater-banner .content .floater-sel {
+    background-color: transparent;
+    width: 100%;
+    height: 15%;
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.floater-banner .content .floater-sel li {
+    background-color: transparent;
+    width: 5%;
+    height: 100%;
+    margin: 1%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.floater-banner .content .floater-sel li .sel-line {
+    background-color: var(--bgColor6);
+    width: 100%;
+    height: 15%;
+    border-radius: 20px;
+    opacity: 0.3;
+    transition: all 0.2s ease-in-out;
+}
+.floater-banner .content .active-floater-sel {
+    transform: scaleX(1.5);
+    margin: 2% !important;
+}
+.floater-banner .content .active-floater-sel .sel-line {
+    opacity: 1 !important;
+}

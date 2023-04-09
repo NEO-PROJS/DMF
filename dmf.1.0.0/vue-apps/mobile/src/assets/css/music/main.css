@@ -1,0 +1,36 @@
+:root {
+    --bgColor1: #0c2129;
+    --bgColor2: #112932;
+    --bgColor3: #ada816;
+    --bgColor4: #c2bd1d;
+    --bgColor5: #0c8474;
+    --bgColor6: #77b4a9;
+    --bgColor7: #16343f;
+}
+
+body {
+    margin: 0;
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    color: white;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#container {
+    background-color: var(--bgColor1);
+    margin: 0 auto;
+    width: 100%;
+    height: 2000px;
+    padding: 0.1px;
+}
+
+#container #content {
+    background-color: transparent;
+    width: 100vw;
+    height: 100%;
+    position: relative;
+}

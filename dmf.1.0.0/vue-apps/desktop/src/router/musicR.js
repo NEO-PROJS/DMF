@@ -1,0 +1,134 @@
+import { createRouter, createWebHistory } from 'vue-router';
+// Components
+import DockRight from '@/components/music/docks/DockRight.vue';
+import DockBottom from '@/components/music/docks/DockBottom.vue';
+import TopIntro from '@/components/music/TopIntro.vue';
+import Footer from '@/components/music/Footer.vue';
+import TrendsBox from '@/components/music/boxes/TrendsBox.vue';
+import LatestsBox from '@/components/music/boxes/LatestsBox.vue';
+import SuggestsBox from '@/components/music/boxes/SuggestsBox.vue';
+// Views
+import HomeView from '@/views/music/Home.vue';
+import PlayListsView from '@/views/music/PlayLists.vue';
+import SearchView from '@/views/music/Search.vue';
+import TrendsView from '@/views/music/Trends.vue';
+import LatestsView from '@/views/music/Latests.vue';
+import SuggestsView from '@/views/music/Suggests.vue';
+import SettingsView from '@/views/music/Settings.vue';
+
+
+const routes = [
+    // Root
+    {
+        path: '/music/',
+        redirect: {name:'home'},
+        name: 'root',
+    },
+    // Home
+    {
+        path: '/music/home/',
+        name: 'home',
+        components: {
+            default: HomeView,
+            dockRight: DockRight,
+            dockBottom: DockBottom,
+            topIntro: TopIntro,
+            trendsBox: TrendsBox,
+            latestsBox: LatestsBox,
+            suggestsBox: SuggestsBox,
+            footer: Footer
+        },
+        props: {
+            dockRight: {optState: 'home'}
+        },
+    },
+    // PlayLists
+    {
+        path: '/music/playlists/',
+        name: 'playLists',
+        components: {
+            default: PlayListsView,
+            dockRight: DockRight,
+            dockBottom: DockBottom,
+            topIntro: TopIntro,
+        },
+        props: {
+            dockRight: {optState: 'playlists'}
+        },
+    },
+    // Search and Discover
+    {
+        path: '/music/search/',
+        name: 'search',
+        components: {
+            default: SearchView,
+            dockRight: DockRight,
+            dockBottom: DockBottom,
+            topIntro: TopIntro,
+        },
+        props: {
+            dockRight: {optState: 'search'}
+        },
+    },
+    // Trends
+    {
+        path: '/music/home/trends/',
+        name: 'trends',
+        components: {
+            default: TrendsView,
+            dockRight: DockRight,
+            dockBottom: DockBottom,
+            topIntro: TopIntro,
+        },
+        props: {
+            dockRight: {optState: 'home'}
+        },
+    },
+    // Tops
+    {
+        path : '/music/home/latests/',
+        name : 'latests',
+        components: {
+            default: LatestsView,
+            dockRight: DockRight,
+            dockBottom: DockBottom,
+            topIntro: TopIntro,
+        },
+        props: {
+            dockRight: {optState: 'home'}
+        },
+    },
+    // Suggests
+    {
+        path: '/music/home/suggests/',
+        name : 'suggests',
+        components: {
+            default: SuggestsView,
+            dockRight: DockRight,
+            dockBottom: DockBottom,
+            topIntro: TopIntro,
+        },
+        props: {
+            dockRight: {optState: 'home'}
+        },
+    },
+    // Settings
+    {
+        path: '/music/settings/',
+        name: 'settings',
+        components : {
+            default: SettingsView,
+            dockRight: DockRight,
+            dockBottom: DockBottom,
+            topIntro: TopIntro,
+        },
+    }
+];
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+    sensitive: true,
+});
+
+export default router;

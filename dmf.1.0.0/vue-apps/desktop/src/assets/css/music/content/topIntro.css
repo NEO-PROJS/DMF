@@ -1,0 +1,41 @@
+#top-intro {
+    width: 100%;
+    aspect-ratio: 12;
+    padding: 0.1px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#top-intro #title {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    margin: 0 0 0 2vw;
+}
+#top-intro #title .title-link {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+#top-intro #title .title-link p {
+    display: block;
+    font-size: calc(1pt + 3vw + 2vh);
+    font-family: 'Righteous';
+    margin: 0;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+}
+#top-intro #title .title-link #deep {
+    color: var(--bgColor5);
+    z-index: 1;
+}
+#top-intro #title .title-link #music {
+    color: var(--bgColor3);
+    margin: 0% 0 0 0;
+}
