@@ -1,5 +1,5 @@
 #main-player-right {
-    background-color: transparent;
+    background-color: darkcyan;
     width: 100%;
     aspect-ratio: 1.1;
     margin: 5vh 0 0 0;
@@ -8,93 +8,4 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-}
-#main-player-right #options #cover {
-    background-color: transparent;
-    position: absolute;
-    width: 50%;
-    height: 95%;
-    left: 25%;
-    border-radius: 3%;
-}
-#main-player-right #options #cover img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    border-radius: 3%;
-}
-#main-player-right #options {
-    background-color: transparent;
-    width: 100%;
-    height: 55%;
-    position: relative;
-    display: flex;
-    align-items: end;
-    flex-flow: row wrap;
-}
-#main-player-right #options .opt-btn {
-    width: 18%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background-color: transparent;
-    flex-shrink: 0;
-    cursor: pointer;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: 50% 50%;
-}
-#main-player-right #options .left {
-    margin: 0 0 0 2.5%;
-}
-#main-player-right #options .right {
-    margin: 0 0 0 57.5%;
-}
-
-#main-player-right #ctrl {
-    background-color: transparent;
-    width: 100%;
-    height: 31%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#main-player-right #ctrl .prev-next-btn {
-    width: 16%;
-    aspect-ratio: 1;
-    background-color: transparent;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    display: block;
-}
-#main-player-right #ctrl #play {
-    width: 22%;
-    aspect-ratio: 1;
-    margin: 0 2% 0 2%;
-    background-color: transparent;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    display: block;
-}
-
-#main-player-right #timer {
-    background-color: rgba(169, 169, 169, 0.5);
-    width: 100%;
-    height: 2%;
-    position: relative;
-}
-#main-player-right #timer #curr {
-    background-color: var(--bgColor5);
-    width: 5%;
-    aspect-ratio: 1;
-    position: absolute;
-    left: 0;
-    top: -85%;
-    border-radius: 50%;
 }

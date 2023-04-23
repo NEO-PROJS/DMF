@@ -4,4 +4,39 @@ footer {
     background-color: darkkhaki;
     width: 100%;
     aspect-ratio: 3.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #social-media {
+    width: 25%;
+    height: 90%;
+    background-color: darkseagreen;
+    margin: 0 1% 0 1%;
+}
+footer #social-media #social-media-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(47, 31, 104);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer #social-media #social-media-ul li {
+    width: 90%;
+    height: 25%;
+    background-color: darkorange;
+    margin: 1% 0 1% 0;
+}
+
+footer #more {
+    width: 75%;
+    height: 90%;
+    background-color: darkseagreen;
+    margin: 0 1% 0 1%;
 }
