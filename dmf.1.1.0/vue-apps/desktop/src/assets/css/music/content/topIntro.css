@@ -1,10 +1,11 @@
 #top-intro {
     width: 100%;
-    aspect-ratio: 12;
+    aspect-ratio: 5;
     padding: 0.1px;
     display: flex;
     align-items: center;
     position: relative;
+    background-color: transparent;
 }
 
 #top-intro #title {
@@ -13,6 +14,9 @@
     position: relative;
     display: flex;
     margin: 0 0 0 2vw;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
 }
 #top-intro #title .title-link {
     width: fit-content;

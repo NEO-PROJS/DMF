@@ -72,6 +72,7 @@ const routes = [
             dockRight: DockRight,
             dockBottom: DockBottom,
             topIntro: TopIntro,
+            footer: Footer
         },
         props: {
             dockRight: {optState: 'playlists'}
@@ -86,6 +87,7 @@ const routes = [
             dockRight: DockRight,
             dockBottom: DockBottom,
             topIntro: TopIntro,
+            footer: Footer
         },
         props: {
             dockRight: {optState: 'search'}
@@ -100,6 +102,7 @@ const routes = [
             dockRight: DockRight,
             dockBottom: DockBottom,
             topIntro: TopIntro,
+            footer: Footer
         },
         props: {
             dockRight: {optState: 'home'}
@@ -114,6 +117,7 @@ const routes = [
             dockRight: DockRight,
             dockBottom: DockBottom,
             topIntro: TopIntro,
+            footer: Footer
         },
         props: {
             dockRight: {optState: 'home'}
@@ -128,6 +132,7 @@ const routes = [
             dockRight: DockRight,
             dockBottom: DockBottom,
             topIntro: TopIntro,
+            footer: Footer
         },
         props: {
             dockRight: {optState: 'home'}
@@ -142,6 +147,7 @@ const routes = [
             dockRight: DockRight,
             dockBottom: DockBottom,
             topIntro: TopIntro,
+            footer: Footer
         },
     },
     // Account Root
