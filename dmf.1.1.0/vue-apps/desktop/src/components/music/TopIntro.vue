@@ -1,5 +1,16 @@
 <template>
 <div id="top-intro">
+    <div id="ctrl">
+        <div id="mode" @click="darkMode = !darkMode">
+            <img :src="require('@/assets/img/music/topIntro/moon.png')" :class="{'deactive-mode':!darkMode}">
+            <img :src="require('@/assets/img/music/topIntro/sun.png')" :class="{'deactive-mode':darkMode}">
+        </div>
+        <div id="settings">
+            <router-link :to="{name:'settings'}" class="ctrl-router">
+            <img :src="require('@/assets/img/music/topIntro/settings.png')">
+            </router-link>
+        </div>
+    </div>
     <div id="sign">
         <ul>
             <li><router-link :to="{name:'accountLogin'}" class="sign-router">
@@ -22,7 +33,14 @@
 <script>
 
 export default {
-    name: 'TopIntroComp'
+    name: 'TopIntroComp',
+    data(){
+        return {
+            darkMode: true
+        }
+    },
+    mount(){
+    }
 }
 
 </script>

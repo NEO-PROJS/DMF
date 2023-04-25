@@ -56,11 +56,65 @@
     padding: 0;
     text-align: center;
     background-color: transparent;
-    color: white;
+    color: var(--bgColor6);
     font-family: 'Cairo';
     font-size: calc(1vw + 4pt);
     width: 100%;
     height: 80%;
+}
+
+#top-intro #ctrl {
+    width: 15%;
+    height: 35%;
+    background-color: transparent;
+    position: absolute;
+    left: 2vw;
+    top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top-intro #ctrl #mode {
+    background-color: transparent;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+#top-intro #ctrl #mode img {
+    width: 50%;
+    aspect-ratio: 1;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+#top-intro #ctrl #mode .deactive-mode {
+    position: absolute;
+    width: 30%;
+    opacity: 0.5;
+    transform: translate3d(95%, -65%, 0);
+    transition: all 0.3s ease-in-out;
+}
+#top-intro #ctrl #settings {
+    background-color: transparent;
+    width: 50%;
+    height: 80%;
+}
+#top-intro #ctrl #settings .ctrl-router {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top-intro #ctrl #settings .ctrl-router img {
+    width: 50%;
+    aspect-ratio: 1;
 }
 
 #top-intro #title {
