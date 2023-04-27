@@ -56,9 +56,10 @@
     padding: 0;
     text-align: center;
     background-color: transparent;
-    color: var(--bgColor6);
+    color: #bbede0;
     font-family: 'Cairo';
     font-size: calc(1vw + 4pt);
+    font-weight: 650;
     width: 100%;
     height: 80%;
 }
@@ -144,12 +145,15 @@
     width: fit-content;
     text-align: center;
     position: relative;
+    background-color: transparent;
 }
 #top-intro #title .title-link #deep {
-    color: var(--bgColor5);
+    color: transparent;
     z-index: 1;
+    -webkit-text-stroke: 2px var(--bgColor5);
 }
 #top-intro #title .title-link #music {
-    color: var(--bgColor3);
-    margin: 0% 0 0 0;
+    color: transparent;
+    margin: 0 0 0 0;
+    -webkit-text-stroke: 2px var(--bgColor3);
 }

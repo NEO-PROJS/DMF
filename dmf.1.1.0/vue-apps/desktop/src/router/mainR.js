@@ -140,7 +140,7 @@ const routes = [
     },
     // Music Settings
     {
-        path: '/music/settings/',
+        path: '/music/home/settings/',
         name: 'settings',
         components : {
             default: SettingsView,
@@ -148,6 +148,9 @@ const routes = [
             dockBottom: DockBottom,
             topIntro: TopIntro,
             footer: Footer
+        },
+        props: {
+            dockRight: {optState: 'home'}
         },
     },
     // Account Root

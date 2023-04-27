@@ -1,6 +1,6 @@
 <template>
 <div id="top-intro">
-    <div id="ctrl">
+    <div id="ctrl" v-if="!hideCtrl">
         <div id="mode" @click="darkMode = !darkMode">
             <img :src="require('@/assets/img/music/topIntro/moon.png')" :class="{'deactive-mode':!darkMode}">
             <img :src="require('@/assets/img/music/topIntro/sun.png')" :class="{'deactive-mode':darkMode}">
@@ -11,7 +11,7 @@
             </router-link>
         </div>
     </div>
-    <div id="sign">
+    <div id="sign" v-if="!hideSign">
         <ul>
             <li><router-link :to="{name:'accountLogin'}" class="sign-router">
                 <p>ورود</p>
@@ -21,7 +21,7 @@
             </router-link></li>
         </ul>
     </div>
-    <div id="title">
+    <div id="title" v-if="!hideTitle">
         <router-link :to="{name:'home'}" class="title-link">
         <p id="deep">Deep</p>
         <p id="music">Music</p>
@@ -34,6 +34,7 @@
 
 export default {
     name: 'TopIntroComp',
+    props: ["hideCtrl", "hideSign", "hideTitle"],
     data(){
         return {
             darkMode: true
